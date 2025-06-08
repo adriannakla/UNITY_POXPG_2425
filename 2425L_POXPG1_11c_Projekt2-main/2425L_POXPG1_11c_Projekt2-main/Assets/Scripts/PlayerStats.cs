@@ -10,6 +10,10 @@ public class PlayerStats : MonoBehaviour
 
     public bool isDead = false;
 
+    public float GetHealth()
+    {
+        return health;
+    }
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -17,10 +21,10 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        damage = Mathf.Abs(damage); // if damage < 0 => damage * -1
+        damage = Mathf.Abs(damage); // if damage < 0 ==> damage * -1
         health = Mathf.Clamp(health - damage, 0, maxHealth);
-        //if health-damage > maxHealth => maxHealth
-        //if health-damge < 0 => 0
+        //if health - damage > maxHealth ==> maxHealth
+        //if health - damage < 0 ==> 0
         CheckHealth();
     }
 
@@ -28,7 +32,7 @@ public class PlayerStats : MonoBehaviour
     {
         heal = Mathf.Abs(heal);
         health = Mathf.Clamp(health + heal, 0, maxHealth);
-        CheckHealth();
+        CheckHealth(); 
     }
 
     public void CheckHealth()
@@ -39,4 +43,5 @@ public class PlayerStats : MonoBehaviour
             isDead = true;
         }
     }
+
 }

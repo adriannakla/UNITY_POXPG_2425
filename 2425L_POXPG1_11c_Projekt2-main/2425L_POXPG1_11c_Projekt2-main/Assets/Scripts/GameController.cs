@@ -1,24 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class GameController : MonoBehaviour
 {
     public TextMeshProUGUI TextLivesCount;
     public TextMeshProUGUI TextApplesCount;
-    public string health
-    // Start is called before the first frame update
-    void Start()
+    
+    public Inventory inventory;
+    public PlayerStats stats;
+    
+    public void Update()
     {
-        inventory = GetComponent<Inventory>();
-        stats = GetComponent<PlayerStats>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        p void inventory(string );
-
+        TextLivesCount.text = stats.GetHealth().ToString();
+        TextApplesCount.text = inventory.GetAppleCount().ToString();
     }
 }

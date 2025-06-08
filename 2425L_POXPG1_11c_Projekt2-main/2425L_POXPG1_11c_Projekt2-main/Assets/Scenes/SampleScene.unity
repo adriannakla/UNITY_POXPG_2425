@@ -172,6 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78dd5fd0ba8d44246b4093efce9d7e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextLivesCount: {fileID: 65005380}
+  TextApplesCount: {fileID: 1418012296}
+  inventory: {fileID: 1506773831}
+  stats: {fileID: 1506773832}
 --- !u!114 &65005380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,6 +1319,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78dd5fd0ba8d44246b4093efce9d7e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextLivesCount: {fileID: 65005380}
+  TextApplesCount: {fileID: 1418012296}
+  inventory: {fileID: 0}
+  stats: {fileID: 0}
 --- !u!1 &1506773825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1926,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78dd5fd0ba8d44246b4093efce9d7e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextLivesCount: {fileID: 0}
+  TextApplesCount: {fileID: 0}
+  inventory: {fileID: 0}
+  stats: {fileID: 0}
 --- !u!1 &2011355917
 GameObject:
   m_ObjectHideFlags: 0

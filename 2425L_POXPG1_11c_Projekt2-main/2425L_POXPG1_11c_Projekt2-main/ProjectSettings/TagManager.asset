@@ -38,6 +38,30 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 429019893
+    locked: 0
+  - name: tlo
+    uniqueID: 2351777267
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: tilemapa
+    uniqueID: 493971819
+    locked: 0
+  - name: obiekty
+    uniqueID: 389052883
+    locked: 0
+  - name: "posta\u0107"
+    uniqueID: 4071309929
+    locked: 0
+  - name: UI
+    uniqueID: 821727181
+    locked: 0
+  - name: baner
+    uniqueID: 3899007543
+    locked: 0
+  - name: menu
+    uniqueID: 3631095673
     locked: 0

@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+[RequireComponent(typeof(BoxCollider2D))]
+public class TriggerSceneLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string sceneName = "MainMenu";
+
+    private void Start()
     {
-        
+        GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        SceneManager.LoadScene(sceneName);
     }
+
 }

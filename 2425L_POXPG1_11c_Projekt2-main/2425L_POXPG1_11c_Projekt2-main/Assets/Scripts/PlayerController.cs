@@ -62,6 +62,19 @@ public class PlayerController : MonoBehaviour
         {
             //rb.AddForce(new Vector2(0,jumpForce));
             rb.AddForce( Vector2.up * jumpForce );
+            anim.SetBool("isJumping", true);
+            return;
+        }
+
+        if (rb.velocity.y < 0)
+        {
+            anim.SetBool("isFalling", true);
+        }
+
+        if (groundChecker.isGrounded)
+        {
+            anim.SetBool("isJumping", false);
+            anim.SetBool("isFalling", false);
         }
     }
 
